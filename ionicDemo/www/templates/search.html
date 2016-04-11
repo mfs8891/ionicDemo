@@ -1,5 +1,9 @@
-<ion-view view-title="Search">
+<ion-view view-title="Ver ordenes de trabajo">
   <ion-content>
-    <h1>Search</h1>
+    <ion-list>
+      <ion-item ng-repeat="elemento in ordenesTrabajo" href="#/app/playlists/{{playlist.id}}">
+        <orden order=elemento></orden>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
